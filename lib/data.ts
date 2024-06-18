@@ -1,0 +1,400 @@
+import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
+
+import { LuGraduationCap } from "react-icons/lu";
+import angular from "@/public/logos/angular.svg";
+import react from "@/public/logos/react.svg";
+import typescript from "@/public/logos/typescript.svg";
+import css from "@/public/logos/css.svg";
+import html from "@/public/logos/html.svg";
+import javascript from "@/public/logos/javascript.svg";
+import node from "@/public/logos/node.svg";
+import java from "@/public/logos/java.svg";
+import python from "@/public/logos/python.svg";
+import spring from "@/public/logos/spring.svg";
+import postgres from "@/public/logos/postgres.svg";
+import firebase from "@/public/logos/firebase.svg";
+import framerMotion from "@/public/logos/framer-motion.svg";
+import mysql from "@/public/logos/mysql.svg";
+import docker from "@/public/logos/docker.svg";
+import heroku from "@/public/logos/heroku.svg";
+import postman from "@/public/logos/postman.svg";
+import mongodb from "@/public/logos/mongodb.svg";
+import bash from "@/public/logos/bash.svg";
+import next from "@/public/logos/next.svg";
+import aws from "@/public/logos/aws.svg";
+import ionic from "@/public/logos/ionic.svg";
+import cplusplus from "@/public/logos/c++.svg";
+import csharp from "@/public/logos/csharp.svg";
+import dotnet from "@/public/logos/dotnet.svg";
+import vercel from "@/public/logos/vercel.svg";
+import netlify from "@/public/logos/netlify.svg";
+import s3 from "@/public/logos/amazon-s3.svg";
+import git from "@/public/logos/git.svg";
+
+export const skillsData = [
+    {
+        title: "Web Development",
+        skills: [
+            { name: "React", svg: react },
+            { name: "Next.js", svg: next },
+            { name: "Angular", svg: angular },
+            { name: "Typescript", svg: typescript },
+            // { name: 'Framer Motion', svg: framerMotion },
+            // { name: 'Javascript', svg: javascript },
+            // { name: 'HTML5', svg: html },
+            // { name: 'CSS3', svg: css },
+            // { name: 'Ionic', svg: ionic },
+        ],
+    },
+    {
+        title: "Programming & Scripting",
+        skills: [
+            { name: "C#", svg: csharp },
+            { name: "ASP.NET", svg: dotnet },
+            { name: "Java", svg: java },
+            { name: "Node.js", svg: node },
+            // { name: 'C++', svg: cplusplus },
+            // { name: 'Spring', svg: spring },
+            // { name: 'Python', svg: python },
+            // { name: "C", svg: c },
+            // { name: 'Shell Scripting', svg: bash },
+        ],
+    },
+    {
+        title: "Database Management",
+        skills: [
+            { name: "MongoDB", svg: mongodb },
+            { name: "PostgreSQL", svg: postgres },
+            // { name: "MySQL", svg: mysql },
+            { name: "MySQL", svg: mysql },
+            { name: "Firebase", svg: firebase },
+            // { name: "Amazon S3", svg: s3 },
+        ],
+    },
+    {
+        title: "Tools & Misc.",
+        skills: [
+            { name: "AWS", svg: aws },
+            { name: "Docker", svg: docker },
+            { name: "Git", svg: git },
+            // { name: "Postman", svg: postman },
+            // { name: "Heroku", svg: heroku },
+            { name: "Vercel", svg: vercel },
+            // { name: "Netlify", svg: netlify },
+            ,
+        ],
+    },
+] as const;
+
+export const links = [
+    {
+        name: "Home",
+        hash: "#home",
+    },
+    {
+        name: "About",
+        hash: "#about",
+    },
+    {
+        name: "Experience",
+        hash: "#experience",
+    },
+    {
+        name: "Education",
+        hash: "#education",
+    },
+    {
+        name: "Skills",
+        hash: "#skills",
+    },
+    {
+        name: "Projects",
+        hash: "#projects",
+    },
+    {
+        name: "Contact",
+        hash: "#contact",
+    },
+    // {
+    //     name: "Resume",
+    //     hash: "#resume",
+    // },
+] as const;
+
+export const workExperience = [
+    {
+        title: "Full Stack Developer",
+        company: "Cubitec",
+        location: "Antwerpem, Belgium",
+        description: [],
+        icon: React.createElement(CgWorkAlt),
+        date: "Mei 2024 - Present",
+    },
+    {
+        title: "Full Stack Developer",
+        company: "Thomas more",
+        location: "Antwerpen",
+        description: [
+            "Developed a full stack application for the Thomas More University in Belgium",
+            "Developed a full stack application for the Thomas More University in Belgium",
+            "Developed a full stack application for the Thomas More University in Belgium",
+        ],
+        icon: React.createElement(CgWorkAlt),
+        date: "Sep 2022 - June 2024",
+    },
+    {
+        title: "Project Coordinator",
+        company: "Kanryo BVBA",
+        location: "Antwerpen",
+        description: [
+            "Managed a team of developers to complete a full stack application",
+            "Managed a team of developers to complete a full stack application",
+            "Managed a team of developers to complete a full stack application",
+        ],
+        icon: React.createElement(CgWorkAlt),
+        date: "2017-2020",
+    },
+] as const;
+
+export const education = [
+    {
+        title: "Graduate of Technology in Software Development",
+        company: "Thomas More University",
+        location: "Antwerpen",
+        description: ["Graduated with a 3.5 GPA"],
+        icon: React.createElement(LuGraduationCap),
+        date: "Sep 2021 - Aug 2024",
+    },
+    {
+        title: "Duurzaam wonen",
+        company: "Steinerschool",
+        location: "Lier",
+        description: ["Graduated with a 3.5 GPA"],
+        icon: React.createElement(LuGraduationCap),
+        date: "Sep 1014 - Aug 2017",
+    },
+] as const;
+
+export const projectImages = [
+    // project 1
+    [
+        {
+            image: "https://i.imgur.com/cRbF7Pf.jpeg",
+            alt: "Project 1a",
+        },
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "Project 2a",
+        },
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "Project 3a",
+        },
+    ],
+
+    // project 2
+    [
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 1b",
+        },
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 2b",
+        },
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 3b",
+        },
+
+    ],
+    // project 3
+    [
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "Wproject 1c",
+        },
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 2c",
+        },
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 3c",
+        },
+    ],
+    // Project 4
+    [
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 1d",
+        },
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 2d",
+        },
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 3d",
+        },
+    ],
+    // Project 5
+    [
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 1e",
+        },
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 2e",
+        },
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 3e",
+        },
+    ],
+    // Project 6
+    [
+
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 1f",
+        },
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 2f",
+        },
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "project 3f",
+        },
+
+    ],
+    // Portfolio
+    [
+        {
+            image: "https://i.imgur.com/cRbF7Pf.png",
+            alt: "Next Portfolio",
+        },
+    ],
+] as const;
+
+export const videos = [
+
+    [
+        {
+            video: "https://www.youtube.com/",
+            alt: "Youtube Demo",
+        },
+    ],
+] as const;
+
+export const projectsData = [
+    {
+        title: "Full Stack Application",
+        tech: ["Next.js", "React", "MongoDB", "Oauth2", "Tailwind", "CSS"],
+        description: `This is a full stack application that allows users to create, read, update, and delete posts.  Users can also login with their google account.  The application is styled with Tailwind CSS and uses Next.js for server side rendering.`,
+        codeURL: "https://github.com/gllsrssx/gilles-rousseaux-eindopdracht",
+        liveDemoURL: "https://gilles-rousseaux-eindopdracht.vercel.app",
+        carouselImage: projectImages[0],
+    },
+    {
+        title: "Flutter Mobile Application",
+        tech: [
+            "Flutter",
+            "Dart",
+            "Firebase",
+            "TomTom API",
+            "Agile Software Development",
+        ],
+        description: `This is a mobile application that allows users to track their daily commute.  The application uses the TomTom API to track the user's location and display the route on a map.  The application also uses Firebase to store user data and authenticate users.`,
+        codeURL: "https://github.com/gllsrssx/flutter",
+        videoDemoURL: "https://www.youtube.com/",
+        carouselImage: projectImages[1],
+    },
+    {
+        title: "Gilles Rousseaux's Portfolio ",
+        tech: ["React", "Next.js", "Tailwind", "Typescript"],
+        description: `This is my portfolio website that showcases my technical knowledge and application.  The website is styled with responsive design in mind and uses Next.js for server side rendering.  The website is also styled with Tailwind CSS.`,
+        codeURL: "https://github.com/gllsrssx/gilles-rousseaux-portfolio",
+        liveDemoURL: "https://gilles-rousseaux-eindopdracht.vercel.app",
+        carouselImage: projectImages[6],
+    },
+    {
+        title: "AWS Backend Microservice",
+        tech: [
+            "Node.js",
+            "AWS",
+            "Cognito",
+            "S3",
+            "DynamoDB",
+            "Docker Compose",
+            "Github Actions",
+            "Jest",
+        ],
+        description: `This is a backend microservice that allows users to upload and download files from an S3 bucket.  The application uses AWS Cognito for authentication and DynamoDB to store user data.  The application is containerized with Docker Compose and tested with Jest.`,
+        codeURL: "https://github.com/gllsrssx/fragments",
+        videoDemoURL: "https://www.youtube.com/",
+        // carouselImage: projectImages[3],
+        carouselImage: "",
+    },
+    {
+        title: "Project 4",
+        tech: ["Angular", "Bootstrap", "CSS"],
+        description: `This is a project that I worked on with a team of developers.  The project is a full stack application that allows users to create, read, update, and delete posts.  The application is styled with Bootstrap and CSS.`,
+        codeURL: "https://github.com/gllsrssx/",
+        liveDemoURL: "https://vercel.app/app/1",
+        carouselImage: projectImages[2],
+    },
+    {
+        title: "project 5",
+        tech: [
+            "Spring Boot",
+            "Java",
+            "SQL",
+            "Docker",
+            "Thymeleaf",
+            "jNano",
+            "Google ZXing",
+        ],
+        description: `This is a project that I worked on with a team of developers.  The project is a full stack application that allows users to create, read, update, and delete posts.  The application is styled with Thymeleaf and uses Google ZXing to generate QR codes.`,
+        codeURL: "https://github.com/gllsrssx/",
+        videoDemoURL: "https://www.youtube.com/",
+        carouselImage: projectImages[3],
+    },
+] as const;
+
+export const showMoreProjectsList = [
+    {
+        title: "Portfolio Front End Application",
+        tech: ["Next.js", "MaterialUI", "CSS"],
+        description: `This portfolio website is coded in Next.js and CSS to showcase my technical
+            knowledge and application. The website was styled with responsive design in
+            mind.`,
+        codeURL: "https://github.com/gllsrssx/gilles-rousseaux-eindopdracht",
+        liveDemoURL: "https://www.Gilles.dev/",
+        image: "https://i.imgur.com/.png",
+    },
+    {
+        title: "app 2",
+        tech: ["Java"],
+        description: `This is a project that I worked on with a team of developers.  The project is a full stack application that allows users to create, read, update, and delete posts.  The application is styled with Bootstrap and CSS.`,
+        codeURL: "https://github.com/gllsrssx/",
+        videoDemoURL: "https://www.youtube.com/",
+        image: "https://i.imgur.com/.png",
+    },
+] as const;
+
+export const useInViewSettings = {
+    // threshold: 0.8,
+    // initialInView: true,
+    // triggerOnce: true,
+    rootMargin: "-40% 0% -40% 0%",
+} as const;
+
+export const MetadataValues = {
+    Title: "Gilles Rousseaux Full Stack Developer",
+    Description:
+        "Gilles Rousseaux is a Full Stack Developer who is passionate about web development. He graduated from Thomas More University with a degree in Software Development.",
+};
