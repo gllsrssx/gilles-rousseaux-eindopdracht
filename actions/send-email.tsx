@@ -15,7 +15,7 @@ const sendEmail = async (email: string, message: string) => {
         // Probeer een e-mail te versturen met de volgende details.
         await resend.emails.send({
             from: "Acme <onboarding@resend.dev>", // Van wie de e-mail komt.
-            to: "delivered@resend.dev", // Naar wie de e-mail gestuurd wordt.
+            to: "glls@rssx.be", // Naar wie de e-mail gestuurd wordt.
             subject: "Message from Portfolio", // Het onderwerp van de e-mail.
             reply_to: email, // Het e-mailadres waarop gereageerd kan worden.
             text: message, // De tekst van het bericht.

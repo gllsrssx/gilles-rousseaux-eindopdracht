@@ -196,26 +196,37 @@ export const education = [
 ] as const;
 
 export const projectImages = [
-    // project 1
+    // Portfolio 0
     [
         {
-            image: "https://i.imgur.com/cRbF7Pf.jpeg",
-            alt: "Project 1a",
+            image: "https://i.imgur.com/XEZBh81.jpeg",
+            alt: "Next Portfolio dark",
         },
         {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "Project 2a",
+            image: "https://i.imgur.com/SrilXXE.jpeg",
+            alt: "Next Portfolio light",
+        },
+    ],
+    // action cars 1
+    [
+        {
+            image: "https://i.imgur.com/JnVq48J.jpeg",
+            alt: "car main",
         },
         {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "Project 3a",
+            image: "https://i.imgur.com/zPpC51G.jpeg",
+            alt: "car pic",
+        },
+        {
+            image: "https://i.imgur.com/pKCBFCM.jpeg",
+            alt: "car detail",
         },
     ],
 
     // project 2
     [
         {
-            image: "https://i.imgur.com/cRbF7Pf.png",
+            image: "https://i.imgur.com/cRbFs7Pf.png",
             alt: "project 1b",
         },
         {
@@ -228,7 +239,7 @@ export const projectImages = [
         },
 
     ],
-   
+
     // Project 5
     [
         {
@@ -261,13 +272,6 @@ export const projectImages = [
         },
 
     ],
-    // Portfolio
-    [
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "Next Portfolio",
-        },
-    ],
 ] as const;
 
 export const videos = [
@@ -282,12 +286,20 @@ export const videos = [
 
 export const projectsData = [
     {
-        title: "Full Stack Application",
-        tech: ["Next.js", "React", "MongoDB", "Oauth2", "Tailwind", "CSS"],
-        description: `This is a full stack application that allows users to create, read, update, and delete posts.  Users can also login with their google account.  The application is styled with Tailwind CSS and uses Next.js for server side rendering.`,
+        title: "Gilles Rousseaux's Portfolio ",
+        tech: ["React", "Next.js", "Tailwind", "Typescript"],
+        description: `This is my portfolio website that showcases my technical knowledge and application.  The website is styled with responsive design in mind and uses Next.js for server side rendering.  The website is also styled with Tailwind CSS.`,
         codeURL: "https://github.com/gllsrssx/gilles-rousseaux-eindopdracht",
-        liveDemoURL: "https://gilles-rousseaux-eindopdracht.vercel.app",
+        liveDemoURL: "https://rssx.eu/",
         carouselImage: projectImages[0],
+    },
+    {
+        title: "Auction car scraper",
+        tech: ["Python", "Django", "Render", "html", "scraping", "Bootstrap"],
+        description: `Scrapes cars from a couple of auction site with personal filters to find a good deal car in benelux/de.`,
+        codeURL: "https://github.com/gllsrssx/auctionCarsScraper",
+        liveDemoURL: "https://auctionscraper.onrender.com/",
+        carouselImage: projectImages[1],
     },
     {
         title: "Flutter Mobile Application",
@@ -301,14 +313,6 @@ export const projectsData = [
         description: `This is a mobile application that allows users to track their daily commute.  The application uses the TomTom API to track the user's location and display the route on a map.  The application also uses Firebase to store user data and authenticate users.`,
         codeURL: "https://github.com/gllsrssx/flutter",
         videoDemoURL: "https://www.youtube.com/",
-        carouselImage: projectImages[1],
-    },
-    {
-        title: "Gilles Rousseaux's Portfolio ",
-        tech: ["React", "Next.js", "Tailwind", "Typescript"],
-        description: `This is my portfolio website that showcases my technical knowledge and application.  The website is styled with responsive design in mind and uses Next.js for server side rendering.  The website is also styled with Tailwind CSS.`,
-        codeURL: "https://github.com/gllsrssx/gilles-rousseaux-portfolio",
-        liveDemoURL: "https://gilles-rousseaux-eindopdracht.vercel.app",
         carouselImage: projectImages[2],
     },
 ] as const;

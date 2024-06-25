@@ -74,16 +74,67 @@ const Intro = () => {
                         web applications.
                     </motion.p>
                     <motion.div
-                        className="flex flex-col items-center justify-center gap-3 sm:min-w-96 sm:flex-row sm:gap-4" // Stijlen voor de container van de knoppen
-                        initial={{ y: 100, opacity: 0 }} // Beginpositie voor de animatie
-                        animate={{ y: 0, opacity: 1 }} // Eindpositie voor de animatie
+                        className="flex flex-col items-center justify-center gap-3 sm:min-w-96 sm:flex-row sm:gap-4"
+                        initial={{ y: 100, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
                         transition={{
                             type: "spring",
                             delay: 0.1,
                             duration: 0.1,
-                        }} // Animatie instellingen
+                        }}
                     >
-                        {/* Knoppen en links naar sociale media en CV download */}
+                        <motion.button
+                            className="button_secondary group"
+                            whileHover={{ scale: 1.04 }}
+                            whileTap={{ scale: 0.97 }}
+                            onClick={() => {
+                                router.push("#contact");
+                                setActiveSection("Contact");
+                            }}
+                        >
+                            Contact Me{" "}
+                            <BsEnvelope className="transition-all group-hover:translate-x-0.5" />
+                        </motion.button>
+                        <motion.a
+                            href="/Gilles_Rousseaux_Resume_EN.pdf"
+                            download
+                            className="button_primary group"
+                            whileHover={{ scale: 1.04 }}
+                            whileTap={{ scale: 0.97 }}
+                        >
+                            Download CV{" "}
+                            <BsDownload className="transition-all group-hover:translate-y-0.5" />
+                        </motion.a>
+
+                        <Link
+                            href="https://www.linkedin.com/in/gllsrssx/"
+                            target="_blank"
+                        >
+                            <motion.div
+                                className="button_shape flex w-44 items-center justify-center gap-2 border border-gray-400 bg-gray-50 hover:bg-gray-100 sm:w-auto sm:p-2.5 sm:px-6"
+                                whileHover={{ scale: 1.07 }}
+                                whileTap={{ scale: 0.97 }}
+                            >
+                                <span className="display">LinkedIn</span>
+                                <BsLinkedin
+                                    size={20}
+                                    className="text-blue-800 dark:text-blue-500"
+                                />
+                            </motion.div>
+                        </Link>
+                        <Link
+                            href="https://github.com/gllsrssx"
+                            target="_blank"
+                        >
+                            <motion.div
+                                className="button_shape flex w-44 items-center justify-center gap-2 border border-gray-400 bg-gray-50 px-4 py-2 hover:bg-gray-100 sm:w-auto sm:p-2.5 sm:px-8"
+                                whileHover={{ scale: 1.07 }}
+                                whileTap={{ scale: 0.97 }}
+                            >
+                                <span className="display">GitHub</span>
+                                <BsGithub size={20} />
+                            </motion.div>
+                        </Link>
                     </motion.div>
                 </div>
             </div>
