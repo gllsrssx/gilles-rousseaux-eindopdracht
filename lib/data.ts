@@ -357,6 +357,7 @@ export const useInViewSettings = {
 
 export const MetadataValues = {
     Title: "Gilles Rousseaux Full Stack Developer",
+    ShortTitle: "Portfolio Gilles",
     Description:
         "Gilles Rousseaux is a Full Stack Developer who is passionate about web development. He graduated from Thomas More University with a degree in Software Development.",
 };
