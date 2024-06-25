@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 
 import { LuGraduationCap } from "react-icons/lu";
 import angular from "@/public/logos/angular.svg";
+import flutter from "@/public/logos/flutter.svg";
 import react from "@/public/logos/react.svg";
 import typescript from "@/public/logos/typescript.svg";
 import css from "@/public/logos/css.svg";
@@ -31,6 +32,7 @@ import vercel from "@/public/logos/vercel.svg";
 import netlify from "@/public/logos/netlify.svg";
 import s3 from "@/public/logos/amazon-s3.svg";
 import git from "@/public/logos/git.svg";
+import vscode from "@/public/logos/vscode.svg";
 
 export const skillsData = [
     {
@@ -38,8 +40,9 @@ export const skillsData = [
         skills: [
             { name: "React", svg: react },
             { name: "Next.js", svg: next },
-            { name: "Angular", svg: angular },
+            // { name: "Angular", svg: angular },
             { name: "Typescript", svg: typescript },
+            { name: "Flutter", svg: flutter },
             // { name: 'Framer Motion', svg: framerMotion },
             // { name: 'Javascript', svg: javascript },
             // { name: 'HTML5', svg: html },
@@ -50,25 +53,25 @@ export const skillsData = [
     {
         title: "Programming & Scripting",
         skills: [
-            { name: "C#", svg: csharp },
-            { name: "ASP.NET", svg: dotnet },
             { name: "Java", svg: java },
+            // { name: "C#", svg: csharp },
+            // { name: "ASP.NET", svg: dotnet },
             { name: "Node.js", svg: node },
             // { name: 'C++', svg: cplusplus },
             // { name: 'Spring', svg: spring },
-            // { name: 'Python', svg: python },
+            { name: 'Shell Scripting', svg: bash },
+            { name: 'Python', svg: python },
             // { name: "C", svg: c },
-            // { name: 'Shell Scripting', svg: bash },
         ],
     },
     {
         title: "Database Management",
         skills: [
+            { name: "Firebase", svg: firebase },
+            { name: "MySQL", svg: mysql },
             { name: "MongoDB", svg: mongodb },
             { name: "PostgreSQL", svg: postgres },
             // { name: "MySQL", svg: mysql },
-            { name: "MySQL", svg: mysql },
-            { name: "Firebase", svg: firebase },
             // { name: "Amazon S3", svg: s3 },
         ],
     },
@@ -78,9 +81,10 @@ export const skillsData = [
             { name: "AWS", svg: aws },
             { name: "Docker", svg: docker },
             { name: "Git", svg: git },
+            { name: "Visual studio code", svg: vscode }
             // { name: "Postman", svg: postman },
             // { name: "Heroku", svg: heroku },
-            { name: "Vercel", svg: vercel },
+            // { name: "Vercel", svg: vercel },
             // { name: "Netlify", svg: netlify },
             ,
         ],
@@ -124,45 +128,51 @@ export const links = [
 
 export const workExperience = [
     {
-        title: "Full Stack Developer",
+        title: "Full Stack Developer Intern",
         company: "Cubitec",
-        location: "Antwerpem, Belgium",
-        description: [],
-        icon: React.createElement(CgWorkAlt),
-        date: "Mei 2024 - Present",
-    },
-    {
-        title: "Full Stack Developer",
-        company: "Thomas more",
         location: "Antwerpen",
         description: [
-            "Developed a full stack application for the Thomas More University in Belgium",
-            "Developed a full stack application for the Thomas More University in Belgium",
-            "Developed a full stack application for the Thomas More University in Belgium",
+            "Joined a team of developers to build a full stack application",
+            "Worked with Java, Javascript, SQL, Docker, and AWS",
         ],
         icon: React.createElement(CgWorkAlt),
-        date: "Sep 2022 - June 2024",
+        date: "November 2023 - June 2024",
     },
     {
         title: "Project Coordinator",
         company: "Kanryo BVBA",
         location: "Antwerpen",
         description: [
-            "Managed a team of developers to complete a full stack application",
-            "Managed a team of developers to complete a full stack application",
-            "Managed a team of developers to complete a full stack application",
+            "Supervised a team to set up and manage VIP campings on festivals",
+            "Supervised a team to set up and manage a stand on festivals",
+            "Woodwork",
+            "Art logistics",
         ],
         icon: React.createElement(CgWorkAlt),
-        date: "2017-2020",
+        date: "June 2018 - March 2020",
+    },
+    {
+        title: "Hospitality",
+        company: "Various",
+        location: "Antwerpen/Gent",
+        description: [
+            "Bars",
+            "Restaurants",
+            "Hotels",
+            "Events",
+            "Deliveroo",
+        ],
+        icon: React.createElement(CgWorkAlt),
+        date: "2012 - 2018",
     },
 ] as const;
 
 export const education = [
     {
-        title: "Graduate of Technology in Software Development",
+        title: "Graduate Full Stack Developer",
         company: "Thomas More University",
         location: "Antwerpen",
-        description: ["Graduated with a 3.5 GPA"],
+        description: [],
         icon: React.createElement(LuGraduationCap),
         date: "Sep 2021 - Aug 2024",
     },
@@ -170,9 +180,9 @@ export const education = [
         title: "Duurzaam wonen",
         company: "Steinerschool",
         location: "Lier",
-        description: ["Graduated with a 3.5 GPA"],
+        description: [],
         icon: React.createElement(LuGraduationCap),
-        date: "Sep 1014 - Aug 2017",
+        date: "Sep 2014 - Aug 2017",
     },
 ] as const;
 

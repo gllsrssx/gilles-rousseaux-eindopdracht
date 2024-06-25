@@ -82,7 +82,7 @@ const Education = () => {
                                         {/* // Titel van de opleiding */}
                                     </h4>
                                     <p className="text-md !mb-2 !mt-0 text-gray-700 dark:text-gray-400">
-                                        {edu.location} // Locatie van de opleiding
+                                        {edu.location} 
                                     </p>
                                     {/* // Beschrijving van de opleiding */}
                                     {edu.description.map((list, index) => {
