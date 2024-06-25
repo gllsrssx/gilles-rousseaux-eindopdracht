@@ -33,6 +33,7 @@ import netlify from "@/public/logos/netlify.svg";
 import s3 from "@/public/logos/amazon-s3.svg";
 import git from "@/public/logos/git.svg";
 import vscode from "@/public/logos/vscode.svg";
+import { BsCode } from "react-icons/bs";
 
 export const skillsData = [
     {
@@ -196,7 +197,7 @@ export const education = [
 ] as const;
 
 export const projectImages = [
-    // Portfolio 0
+    // 0 Portfolio 
     [
         {
             image: "https://i.imgur.com/XEZBh81.jpeg",
@@ -207,7 +208,7 @@ export const projectImages = [
             alt: "Next Portfolio light",
         },
     ],
-    // action cars 1
+    // 1 action cars 
     [
         {
             image: "https://i.imgur.com/JnVq48J.jpeg",
@@ -222,55 +223,23 @@ export const projectImages = [
             alt: "car detail",
         },
     ],
-
-    // project 2
+    // 2 flutter meal planner app
     [
         {
-            image: "https://i.imgur.com/cRbFs7Pf.png",
-            alt: "project 1b",
-        },
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 2b",
-        },
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 3b",
-        },
-
-    ],
-
-    // Project 5
-    [
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 1e",
-        },
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 2e",
-        },
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 3e",
+            image: "https://i.imgur.com/n4ZBjef.jpeg",
+            alt: "flutter meal planner app main",
         },
     ],
-    // Project 6
+    // 3 Stremio live iptv addon
     [
-
         {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 1f",
+            image: "https://i.imgur.com/hm3fGlC.jpeg",
+            alt: "vtm",
         },
         {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 2f",
-        },
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 3f",
-        },
-
+            image: "https://i.imgur.com/TLC2A99.jpeg",
+            alt: "catalog",
+        }
     ],
 ] as const;
 
@@ -278,8 +247,8 @@ export const videos = [
 
     [
         {
-            video: "https://www.youtube.com/",
-            alt: "Youtube Demo",
+            video: "https://youtu.be/3GpVEnTpWSI",
+            alt: "Flutter meal planner app demo",
         },
     ],
 ] as const;
@@ -307,34 +276,30 @@ export const projectsData = [
             "Flutter",
             "Dart",
             "Firebase",
-            "TomTom API",
-            "Agile Software Development",
         ],
-        description: `This is a mobile application that allows users to track their daily commute.  The application uses the TomTom API to track the user's location and display the route on a map.  The application also uses Firebase to store user data and authenticate users.`,
+        description: `This is a mobile application that allows users to plan their meals for each day. The application is written in Next.js and Typescript and styled with Tailwind CSS and uses Firebase for authentication and data storage.`,
         codeURL: "https://github.com/gllsrssx/flutter",
-        videoDemoURL: "https://www.youtube.com/",
+        videoDemoURL: "https://youtu.be/3GpVEnTpWSI",
         carouselImage: projectImages[2],
     },
+    {
+        title: "Stremio Live IPTV Addon",
+        tech: ["Javascript", "Node.js", "stremio-addon-sdk", "IPTV"],
+        description: `Stremio IPTV Add-on is a powerful extension that brings a wide range of Internet Protocol Television (IPTV) channels to your Stremio app. It leverages the iptv-org API, providing a vast selection of live channels across different genres and regions.`,
+        codeURL: "https://github.com/gllsrssx/IPTV-stremio-addon",
+        liveDemoURL: "https://iptv-stremio-addon.onrender.com/",
+        carouselImage: projectImages[3],
+    }
 ] as const;
 
 export const showMoreProjectsList = [
     {
-        title: "Portfolio Front End Application",
-        tech: ["Next.js", "MaterialUI", "CSS"],
-        description: `This portfolio website is coded in Next.js and CSS to showcase my technical
-            knowledge and application. The website was styled with responsive design in
-            mind.`,
+        title: "Gilles Rousseaux's Portfolio ",
+        tech: ["React", "Next.js", "Tailwind", "Typescript"],
+        description: `This is my portfolio website that showcases my technical knowledge and application.  The website is styled with responsive design in mind and uses Next.js for server side rendering.  The website is also styled with Tailwind CSS.`,
         codeURL: "https://github.com/gllsrssx/gilles-rousseaux-eindopdracht",
-        liveDemoURL: "https://www.Gilles.dev/",
-        image: "https://i.imgur.com/.png",
-    },
-    {
-        title: "app 2",
-        tech: ["Java"],
-        description: `This is a project that I worked on with a team of developers.  The project is a full stack application that allows users to create, read, update, and delete posts.  The application is styled with Bootstrap and CSS.`,
-        codeURL: "https://github.com/gllsrssx/",
-        videoDemoURL: "https://www.youtube.com/",
-        image: "https://i.imgur.com/.png",
+        liveDemoURL: "https://rssx.eu/",
+        // carouselImage: projectImages[0],
     },
 ] as const;
 
