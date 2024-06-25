@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation"; // Importeer useRouter hook van Nex
 import { useEffect } from "react"; // Importeer useEffect hook van React
 import { BsDownload, BsEnvelope, BsGithub, BsLinkedin } from "react-icons/bs"; // Importeer iconen van react-icons
 import { useInView } from "react-intersection-observer"; // Importeer useInView hook voor het detecteren van elementen in viewport
+import profile_Picture from "../public/images/profile_picture.jpeg"; // Importeer profielfoto
 
 const Intro = () => {
     const router = useRouter(); // Initialiseer de useRouter hook
@@ -36,7 +37,7 @@ const Intro = () => {
                 <Image
                     ref={ref} // Referentie voor useInView
                     className="mt-24 rounded-xl border-4 border-zinc-100 shadow-sm shadow-zinc-800 sm:mt-36" // Stijlen voor de afbeelding
-                    src="https://i.imgur.com/cRbF7Pf.jpeg" // Afbeeldingsbron
+                    src={profile_Picture} // Afbeeldingsbron
                     width={200} // Breedte van de afbeelding
                     height={300} // Hoogte van de afbeelding
                     alt="head shot" // Alternatieve tekst voor de afbeelding

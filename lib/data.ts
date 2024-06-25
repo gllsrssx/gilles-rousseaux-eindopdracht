@@ -172,7 +172,13 @@ export const education = [
         title: "Graduate Full Stack Developer",
         company: "Thomas More University",
         location: "Antwerpen",
-        description: [],
+        description: [
+            "Frontend Development",
+            "Backend Development",
+            "Database Management",
+            "Agile Software Development",
+            "Soft Skills",
+        ],
         icon: React.createElement(LuGraduationCap),
         date: "Sep 2021 - Aug 2024",
     },
@@ -180,7 +186,10 @@ export const education = [
         title: "Duurzaam wonen",
         company: "Steinerschool",
         location: "Lier",
-        description: [],
+        description: [
+            "Construction",
+            "Sustainability",
+        ],
         icon: React.createElement(LuGraduationCap),
         date: "Sep 2014 - Aug 2017",
     },
@@ -219,36 +228,7 @@ export const projectImages = [
         },
 
     ],
-    // project 3
-    [
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "Wproject 1c",
-        },
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 2c",
-        },
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 3c",
-        },
-    ],
-    // Project 4
-    [
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 1d",
-        },
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 2d",
-        },
-        {
-            image: "https://i.imgur.com/cRbF7Pf.png",
-            alt: "project 3d",
-        },
-    ],
+   
     // Project 5
     [
         {
@@ -329,49 +309,7 @@ export const projectsData = [
         description: `This is my portfolio website that showcases my technical knowledge and application.  The website is styled with responsive design in mind and uses Next.js for server side rendering.  The website is also styled with Tailwind CSS.`,
         codeURL: "https://github.com/gllsrssx/gilles-rousseaux-portfolio",
         liveDemoURL: "https://gilles-rousseaux-eindopdracht.vercel.app",
-        carouselImage: projectImages[6],
-    },
-    {
-        title: "AWS Backend Microservice",
-        tech: [
-            "Node.js",
-            "AWS",
-            "Cognito",
-            "S3",
-            "DynamoDB",
-            "Docker Compose",
-            "Github Actions",
-            "Jest",
-        ],
-        description: `This is a backend microservice that allows users to upload and download files from an S3 bucket.  The application uses AWS Cognito for authentication and DynamoDB to store user data.  The application is containerized with Docker Compose and tested with Jest.`,
-        codeURL: "https://github.com/gllsrssx/fragments",
-        videoDemoURL: "https://www.youtube.com/",
-        // carouselImage: projectImages[3],
-        carouselImage: "",
-    },
-    {
-        title: "Project 4",
-        tech: ["Angular", "Bootstrap", "CSS"],
-        description: `This is a project that I worked on with a team of developers.  The project is a full stack application that allows users to create, read, update, and delete posts.  The application is styled with Bootstrap and CSS.`,
-        codeURL: "https://github.com/gllsrssx/",
-        liveDemoURL: "https://vercel.app/app/1",
         carouselImage: projectImages[2],
-    },
-    {
-        title: "project 5",
-        tech: [
-            "Spring Boot",
-            "Java",
-            "SQL",
-            "Docker",
-            "Thymeleaf",
-            "jNano",
-            "Google ZXing",
-        ],
-        description: `This is a project that I worked on with a team of developers.  The project is a full stack application that allows users to create, read, update, and delete posts.  The application is styled with Thymeleaf and uses Google ZXing to generate QR codes.`,
-        codeURL: "https://github.com/gllsrssx/",
-        videoDemoURL: "https://www.youtube.com/",
-        carouselImage: projectImages[3],
     },
 ] as const;
 
