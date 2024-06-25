@@ -11,6 +11,8 @@ import Skills from "@/components/skills"; // Vaardigheden sectie.
 import Divider from "@/components/utils/divider"; // Een scheidingslijn component.
 // Importeer AnimatePresence voor animatie-ondersteuning bij het wisselen van componenten.
 import { AnimatePresence } from "framer-motion";
+// Importeer SpeedInsights component voor het tonen van de snelheidsinzichten.
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // Definieer de hoofdcomponent van de pagina.
 export default function Home() {
@@ -33,6 +35,7 @@ export default function Home() {
                 <Projects /> {/* Toon de projecten sectie. */}
                 <Divider /> {/* Toon een scheidingslijn. */}
                 <Contact /> {/* Toon de contact sectie. */}
+                <SpeedInsights/>
             </main>
         </AnimatePresence>
     );
