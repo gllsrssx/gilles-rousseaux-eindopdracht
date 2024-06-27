@@ -107,7 +107,7 @@ export const metadata: Metadata = {
         locale: "en_US",
         alternateLocale: "nl_BE",
         images: ["https://i.imgur.com/EKlCRYN.png"], // Afbeeldingen voor sociale media.
-        url: "https://www.gllsrssx.be", // URL van de website.
+        url: "https://www.gllsrssx.eu", // URL van de website.
         countryName: "Belgium", // Land van de website.
     },
 };
