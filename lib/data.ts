@@ -2,38 +2,26 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 
 import { LuGraduationCap } from "react-icons/lu";
-import angular from "@/public/logos/angular.svg";
 import flutter from "@/public/logos/flutter.svg";
 import react from "@/public/logos/react.svg";
 import typescript from "@/public/logos/typescript.svg";
 import css from "@/public/logos/css.svg";
 import html from "@/public/logos/html.svg";
-import javascript from "@/public/logos/javascript.svg";
-import node from "@/public/logos/node.svg";
 import java from "@/public/logos/java.svg";
 import python from "@/public/logos/python.svg";
-import spring from "@/public/logos/spring.svg";
 import postgres from "@/public/logos/postgres.svg";
 import firebase from "@/public/logos/firebase.svg";
-import framerMotion from "@/public/logos/framer-motion.svg";
 import mysql from "@/public/logos/mysql.svg";
 import docker from "@/public/logos/docker.svg";
-import heroku from "@/public/logos/heroku.svg";
 import postman from "@/public/logos/postman.svg";
 import mongodb from "@/public/logos/mongodb.svg";
 import bash from "@/public/logos/bash.svg";
-import next from "@/public/logos/next.svg";
 import aws from "@/public/logos/aws.svg";
-import ionic from "@/public/logos/ionic.svg";
 import cplusplus from "@/public/logos/c++.svg";
 import csharp from "@/public/logos/csharp.svg";
-import dotnet from "@/public/logos/dotnet.svg";
-import vercel from "@/public/logos/vercel.svg";
-import netlify from "@/public/logos/netlify.svg";
 import s3 from "@/public/logos/amazon-s3.svg";
 import git from "@/public/logos/git.svg";
 import vscode from "@/public/logos/vscode.svg";
-import { BsCode } from "react-icons/bs";
 
 export const skillsData = [
     {

@@ -51,11 +51,7 @@ const Skills = () => {
                                                 <li className="flex flex-col items-center px-5 py-2"> {/* Container voor elke vaardigheid */}
                                                     <Image
                                                         className={
-                                                            "mb-2 hidden sm:block " +
-                                                            (s.name ===
-                                                            "Next.js"
-                                                                ? "dark:invert" // Inverteer de kleur voor Next.js logo in donkere modus
-                                                                : "")
+                                                            "mb-2 hidden sm:block " //+ (s.name === "Next.js" ? "dark:invert" : "")
                                                         }
                                                         src={s.svg} // Afbeeldingsbron
                                                         alt={s.name} // Alternatieve tekst
@@ -64,11 +60,7 @@ const Skills = () => {
                                                     ></Image>
                                                     <Image
                                                         className={
-                                                            "sm:hidden " +
-                                                            (s.name ===
-                                                            "Next.js"
-                                                                ? "dark:invert" // Inverteer de kleur voor Next.js logo in donkere modus op kleinere schermen
-                                                                : "")
+                                                            "sm:hidden " //+(s.name ==="Next.js"? "dark:invert" // Inverteer de kleur voor Next.js logo in donkere modus op kleinere schermen: "")
                                                         }
                                                         src={s.svg} // Afbeeldingsbron
                                                         alt={s.name} // Alternatieve tekst
