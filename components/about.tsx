@@ -58,7 +58,7 @@ const About = () => {
                 transition={{ type: "spring", delay: 0.25, duration: 0.25 }} // Animatie-eigenschappen
             >
                 Aside from programming, I enjoy gaming and
-                 investing. Have a look around to learn about
+                 food. Have a look around to learn about
                 me and see what projects I have been working on!
             </motion.p>
         </section>
