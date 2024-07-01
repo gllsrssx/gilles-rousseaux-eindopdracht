@@ -16,7 +16,7 @@ const sendEmail = async (email: string, message: string) => {
         await resend.emails.send({
             from: email + " <onboarding@resend.dev>", // Van wie de e-mail komt. 
             to: "gilles1996@outlook.com", // Naar wie de e-mail gestuurd wordt.
-            subject: "Message from Portfolio", // Het onderwerp van de e-mail.
+            subject: "Portfolio Message from "+email, // Het onderwerp van de e-mail.
             reply_to: email, // Het e-mailadres waarop gereageerd kan worden.
             text: message, // De tekst van het bericht.
         });
