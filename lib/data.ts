@@ -253,7 +253,7 @@ export const projectImages = [
     // 7 Grid
     [
         {
-            image:"https://freeimage.host/i/4397825t732g6t3qgb.dV4zlbj",
+            image:"https://i.imgur.com/KyWyA8c.png",
             alt:"C# trading bot",
         },
     ],
