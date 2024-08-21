@@ -257,6 +257,13 @@ export const projectImages = [
             alt:"C# trading bot",
         },
     ],
+    // 8 QR race
+    [
+        {
+            image:"https://i.imgur.com/Ybqz673.png",
+            alt:"QR Race",
+        },
+    ],
 ] as const;
 
 export const videos = [
@@ -337,6 +344,14 @@ export const projectsData = [
         codeURL: "https://github.com/gllsrssx/CBot/blob/master/Grid/Grid.cs",
         liveDemoURL: "https://ctrader.com/u/gilles1996/",
         carouselImage: projectImages[7],
+    },
+    {
+        title: "QRace",
+        tech: ["Java", "Javascript", "HTML", "CSS"],
+        description: `QRace is a web application that allows users to create and participate in QR code scavenger hunts. The application is built with Java, Javascript, HTML, and CSS and uses QR codes to create and solve puzzles.`,
+        codeURL: "https://github.com/22-project-programmeren-thomasmore/QRace",
+        liveDemoURL: "https://qrace.onrender.com/",
+        carouselImage: projectImages[8],
     }
 ] as const;
 
