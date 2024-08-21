@@ -253,7 +253,7 @@ export const projectImages = [
     // 7 Grid
     [
         {
-            image:"https://iili.io/dV4zlbj.png",
+            image:"https://freeimage.host/i/4397825t732g6t3qgb.dV4zlbj",
             alt:"C# trading bot",
         },
     ],
@@ -331,7 +331,7 @@ export const projectsData = [
         carouselImage: projectImages[6],
     },
     {
-        title: "Fifa quiz",
+        title: "Grid bot",
         tech: ["C#", "cTrader"],
         description: `A C# coded trading bot using a grid based system in cAlgo cTrader.`,
         codeURL: "https://github.com/gllsrssx/CBot/blob/master/Grid/Grid.cs",
