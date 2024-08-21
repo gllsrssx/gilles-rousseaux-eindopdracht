@@ -254,8 +254,8 @@ export const projectImages = [
     [
         {
             image:"https://iili.io/dV4zlbj.png",
-            alt:"C# trading bot".
-        }
+            alt:"C# trading bot",
+        },
     ],
 ] as const;
 
