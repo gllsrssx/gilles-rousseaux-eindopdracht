@@ -250,6 +250,13 @@ export const projectImages = [
             alt: "fifa quiz",
         },
     ],
+    // 7 Grid
+    [
+        {
+            image:"",
+            alt:"C# trading bot".
+        }
+    ],
 ] as const;
 
 export const videos = [
@@ -322,6 +329,14 @@ export const projectsData = [
         codeURL: "https://github.com/gllsrssx/fifa-quiz",
         liveDemoURL: "https://fifa-quiz.herokuapp.com/",
         carouselImage: projectImages[6],
+    },
+    {
+        title: "Fifa quiz",
+        tech: ["C#", "cTrader"],
+        description: `A C# coded trading bot using a grid based system in cAlgo cTrader.`,
+        codeURL: "https://github.com/gllsrssx/CBot/blob/master/Grid/Grid.cs",
+        liveDemoURL: "https://ctrader.com/u/gilles1996/",
+        carouselImage: projectImages[7],
     }
 ] as const;
 
