@@ -1,3 +1,6 @@
+//imgae upload site https://img.doerig.dev
+
+
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 
