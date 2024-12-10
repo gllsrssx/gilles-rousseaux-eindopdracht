@@ -161,7 +161,7 @@ export const workExperience = [
 
 export const education = [
     {
-        title: "Graduate Full Stack Developer",
+        title: "Associate's degree in Computer Programming",
         company: "Thomas More University",
         location: "Antwerpen",
         description: [
